@@ -22,7 +22,7 @@ public class DevolutionBookServiceImpl implements DevolutionBookService {
         Optional<BookHistory> bookHistoryOpt = bookHistoryRepository.findByBookIdAndCustomerNationalId(bookId, nationalId);
         if (bookHistoryOpt.isPresent() && LocalDate.now().isAfter(bookHistoryOpt.get().getScheduledReturnDate())) {
             updateBookHistory(bookHistoryOpt.get());
-            return "Livro devolvido, mas deve ser paga uma multa por atraso na entrega.";
+            return "Livro devolvido, mas deve ser pago uma multa por atraso na entrega.";
         } else if (bookHistoryOpt.isPresent() && LocalDate.now().isBefore(bookHistoryOpt.get().getScheduledReturnDate())) {
             updateBookHistory(bookHistoryOpt.get());
             return "Livro devolvido com sucesso.";

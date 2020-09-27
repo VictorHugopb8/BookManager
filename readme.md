@@ -4,7 +4,7 @@
 
 ## Utilização
 
-Você precisa ter o JDK instalado em sua máquina.
+Você precisa ter o JDK instalado e configurado em sua máquina.
 
 Após isso, clone o projeto para sua máquina e o execute.
 
@@ -17,8 +17,8 @@ informações gerais de livros (dashboard) e retornar quais livros são os mais 
 Esses dois últimos fazem parte do mesmo endpoint, mas são diferenciados através do parâmetro do tipo 
 de chart que será utilizado, por exemplo:
 
-* {this.baseUrl}/dashboard/pie -> retornar informações específicas para o chart do tipo torta.
-* {this.baseUrl}/dashboard/bar -> retorna informações específicas para o chart do tipo barra. 
+* {this.baseUrl}/v1/books/dashboard/pie -> retornar informações específicas para o chart do tipo torta.
+* {this.baseUrl}/v1/books/dashboard/bar -> retorna informações específicas para o chart do tipo barra. 
 
 ## Endpoint de acesso ao contexto de livros
 
