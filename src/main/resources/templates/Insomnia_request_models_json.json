@@ -1,0 +1,396 @@
+{
+  "_type": "export",
+  "__export_format": 4,
+  "__export_date": "2020-09-27T07:35:44.442Z",
+  "__export_source": "insomnia.desktop.app:v2020.4.1",
+  "resources": [
+    {
+      "_id": "req_8decea1ee2e6486cadbb44c12c23c2f8",
+      "parentId": "fld_ae1df053d2d4469a9f9173c320d44da2",
+      "modified": 1601191955939,
+      "created": 1601191950956,
+      "url": "http://localhost:8080/v1/customers",
+      "name": "pageCustomers",
+      "description": "",
+      "method": "GET",
+      "body": {},
+      "parameters": [],
+      "headers": [],
+      "authentication": {},
+      "metaSortKey": -1601191950956,
+      "isPrivate": false,
+      "settingStoreCookies": true,
+      "settingSendCookies": true,
+      "settingDisableRenderRequestBody": false,
+      "settingEncodeUrl": true,
+      "settingRebuildPath": true,
+      "settingFollowRedirects": "global",
+      "_type": "request"
+    },
+    {
+      "_id": "fld_ae1df053d2d4469a9f9173c320d44da2",
+      "parentId": "fld_d2241b8ced59429db062133ff3149a65",
+      "modified": 1601191860035,
+      "created": 1601191860035,
+      "name": "customers",
+      "description": "",
+      "environment": {},
+      "environmentPropertyOrder": null,
+      "metaSortKey": -1601191860035,
+      "_type": "request_group"
+    },
+    {
+      "_id": "fld_d2241b8ced59429db062133ff3149a65",
+      "parentId": "wrk_ff3d56db4b224998a2b869afe1dcd8df",
+      "modified": 1601072600469,
+      "created": 1601072600469,
+      "name": "Digivox",
+      "description": "",
+      "environment": {},
+      "environmentPropertyOrder": null,
+      "metaSortKey": -1601072600469,
+      "_type": "request_group"
+    },
+    {
+      "_id": "wrk_ff3d56db4b224998a2b869afe1dcd8df",
+      "parentId": null,
+      "modified": 1553829145065,
+      "created": 1553829145065,
+      "name": "Insomnia",
+      "description": "",
+      "scope": null,
+      "_type": "workspace"
+    },
+    {
+      "_id": "req_8ce749f2beff4dd58f9b5e553ea4f073",
+      "parentId": "fld_ae1df053d2d4469a9f9173c320d44da2",
+      "modified": 1601191866276,
+      "created": 1601072613758,
+      "url": "http://localhost:8080/v1/customers/register",
+      "name": "registerCustomer",
+      "description": "",
+      "method": "POST",
+      "body": {
+        "mimeType": "application/json",
+        "text": "{\n\t\"name\": \"Jurema da Silva\",\n\t\"email\": \"juremadasilva@gmail.com.uk\",\n\t\"nationalId\": \"47534817358\",\n\t\"phone\": \"83898978789\"\n}"
+      },
+      "parameters": [],
+      "headers": [
+        {
+          "name": "Content-Type",
+          "value": "application/json",
+          "id": "pair_f38e5ed6387f4dc0a0a63f69f946ce35"
+        }
+      ],
+      "authentication": {},
+      "metaSortKey": -1601096824407,
+      "isPrivate": false,
+      "settingStoreCookies": true,
+      "settingSendCookies": true,
+      "settingDisableRenderRequestBody": false,
+      "settingEncodeUrl": true,
+      "settingRebuildPath": true,
+      "settingFollowRedirects": "global",
+      "_type": "request"
+    },
+    {
+      "_id": "req_30f0ec6228484478a1e5423e688f8b77",
+      "parentId": "fld_731f49b193734d758b3c92f50588eee3",
+      "modified": 1601191679843,
+      "created": 1601191213832,
+      "url": "http://localhost:8080/v1/books/dashboard/pie",
+      "name": "dashboardPie",
+      "description": "",
+      "method": "GET",
+      "body": {},
+      "parameters": [],
+      "headers": [],
+      "authentication": {},
+      "metaSortKey": -1601191213832,
+      "isPrivate": false,
+      "settingStoreCookies": true,
+      "settingSendCookies": true,
+      "settingDisableRenderRequestBody": false,
+      "settingEncodeUrl": true,
+      "settingRebuildPath": true,
+      "settingFollowRedirects": "global",
+      "_type": "request"
+    },
+    {
+      "_id": "fld_731f49b193734d758b3c92f50588eee3",
+      "parentId": "fld_d2241b8ced59429db062133ff3149a65",
+      "modified": 1601191845644,
+      "created": 1601191676874,
+      "name": "books",
+      "description": "",
+      "environment": {},
+      "environmentPropertyOrder": null,
+      "metaSortKey": -1601191250793,
+      "_type": "request_group"
+    },
+    {
+      "_id": "req_9a70a35b1e7643468c6f9077c387861b",
+      "parentId": "fld_731f49b193734d758b3c92f50588eee3",
+      "modified": 1601191731014,
+      "created": 1601097978968,
+      "url": "http://localhost:8080/v1/books/rent/2",
+      "name": "rentBook",
+      "description": "",
+      "method": "POST",
+      "body": {
+        "mimeType": "application/json",
+        "text": ""
+      },
+      "parameters": [
+        {
+          "name": "scheduledReturnDate",
+          "value": "01/11/2020",
+          "description": "",
+          "id": "pair_99077aced7a4477ba488e5ef9e1d8b44"
+        },
+        {
+          "name": "nationalId",
+          "value": "47534817358",
+          "description": "",
+          "id": "pair_f28118de8d5e414f833aad511252a2eb"
+        }
+      ],
+      "headers": [
+        {
+          "name": "Content-Type",
+          "value": "application/json",
+          "id": "pair_6b0c7ac895b242ed8565ae2647e95d6c"
+        }
+      ],
+      "authentication": {},
+      "metaSortKey": -1601191213782,
+      "isPrivate": false,
+      "settingStoreCookies": true,
+      "settingSendCookies": true,
+      "settingDisableRenderRequestBody": false,
+      "settingEncodeUrl": true,
+      "settingRebuildPath": true,
+      "settingFollowRedirects": "global",
+      "_type": "request"
+    },
+    {
+      "_id": "req_f877ca79c4e64458a4b3d008bd195b45",
+      "parentId": "fld_731f49b193734d758b3c92f50588eee3",
+      "modified": 1601191683274,
+      "created": 1601191044974,
+      "url": "http://localhost:8080/v1/books/reserve/5",
+      "name": "reserveBook",
+      "description": "",
+      "method": "POST",
+      "body": {},
+      "parameters": [
+        {
+          "name": "nationalId",
+          "value": "47534817358",
+          "description": "",
+          "id": "pair_0ec0888ccfaf4dd8b5ccec33a4a9bd37"
+        },
+        {
+          "name": "scheduledReserveDate",
+          "value": "01/11/2020",
+          "description": "",
+          "id": "pair_f3875cf2fae7456c95623cd4b91fd71b"
+        }
+      ],
+      "headers": [],
+      "authentication": {},
+      "metaSortKey": -1601191213732,
+      "isPrivate": false,
+      "settingStoreCookies": true,
+      "settingSendCookies": true,
+      "settingDisableRenderRequestBody": false,
+      "settingEncodeUrl": true,
+      "settingRebuildPath": true,
+      "settingFollowRedirects": "global",
+      "_type": "request"
+    },
+    {
+      "_id": "req_c19c84aa57f8424aa2d454a93e6f8990",
+      "parentId": "fld_731f49b193734d758b3c92f50588eee3",
+      "modified": 1601191884461,
+      "created": 1601191882080,
+      "url": "http://localhost:8080/v1/books",
+      "name": "pageBooks",
+      "description": "",
+      "method": "GET",
+      "body": {},
+      "parameters": [],
+      "headers": [],
+      "authentication": {},
+      "metaSortKey": -1601191213719.5,
+      "isPrivate": false,
+      "settingStoreCookies": true,
+      "settingSendCookies": true,
+      "settingDisableRenderRequestBody": false,
+      "settingEncodeUrl": true,
+      "settingRebuildPath": true,
+      "settingFollowRedirects": "global",
+      "_type": "request"
+    },
+    {
+      "_id": "req_9299a9e1a7c44c7e8c1bbf11fe46c8ca",
+      "parentId": "fld_731f49b193734d758b3c92f50588eee3",
+      "modified": 1601191903957,
+      "created": 1601191901597,
+      "url": "http://localhost:8080/v1/books/devolution/3",
+      "name": "returnBook",
+      "description": "",
+      "method": "POST",
+      "body": {},
+      "parameters": [
+        {
+          "name": "nationalId",
+          "value": "47534817358",
+          "description": "",
+          "id": "pair_e2b493c6b81c4711ac50d7df1ba5e30d"
+        }
+      ],
+      "headers": [],
+      "authentication": {},
+      "metaSortKey": -1601191213713.25,
+      "isPrivate": false,
+      "settingStoreCookies": true,
+      "settingSendCookies": true,
+      "settingDisableRenderRequestBody": false,
+      "settingEncodeUrl": true,
+      "settingRebuildPath": true,
+      "settingFollowRedirects": "global",
+      "_type": "request"
+    },
+    {
+      "_id": "req_911a994fc5ee4687ae3a2974fe895808",
+      "parentId": "fld_731f49b193734d758b3c92f50588eee3",
+      "modified": 1601191914441,
+      "created": 1601191912544,
+      "url": "http://localhost:8080/v1/books/register",
+      "name": "registerBook",
+      "description": "",
+      "method": "POST",
+      "body": {
+        "mimeType": "application/json",
+        "text": "{\n\t\"title\": \"A Casa 2\",\n\t\"version\": 1,\n\t\"rentPerDay\": 1.99\n}"
+      },
+      "parameters": [],
+      "headers": [
+        {
+          "name": "Content-Type",
+          "value": "application/json",
+          "id": "pair_7678f1e1d60a42e69c8f081ad3c0f9b6"
+        }
+      ],
+      "authentication": {},
+      "metaSortKey": -1601191213710.125,
+      "isPrivate": false,
+      "settingStoreCookies": true,
+      "settingSendCookies": true,
+      "settingDisableRenderRequestBody": false,
+      "settingEncodeUrl": true,
+      "settingRebuildPath": true,
+      "settingFollowRedirects": "global",
+      "_type": "request"
+    },
+    {
+      "_id": "req_ab76bd6d084b45d0b6baf67796e2465a",
+      "parentId": "fld_731f49b193734d758b3c92f50588eee3",
+      "modified": 1601191773078,
+      "created": 1601191248833,
+      "url": "http://localhost:8080/v1/books/dashboard/bar",
+      "name": "dashboardBar",
+      "description": "",
+      "method": "GET",
+      "body": {},
+      "parameters": [],
+      "headers": [],
+      "authentication": {},
+      "metaSortKey": -1601191213707,
+      "isPrivate": false,
+      "settingStoreCookies": true,
+      "settingSendCookies": true,
+      "settingDisableRenderRequestBody": false,
+      "settingEncodeUrl": true,
+      "settingRebuildPath": true,
+      "settingFollowRedirects": "global",
+      "_type": "request"
+    },
+    {
+      "_id": "req_510f60f855f54956a623714744525186",
+      "parentId": "fld_731f49b193734d758b3c92f50588eee3",
+      "modified": 1601191684857,
+      "created": 1601190909653,
+      "url": "http://localhost:8080/v1/books/cancel/1",
+      "name": "cancel",
+      "description": "",
+      "method": "POST",
+      "body": {},
+      "parameters": [
+        {
+          "name": "nationalId",
+          "value": "47534817358",
+          "description": "",
+          "id": "pair_2b409c9f45344dc68a9541f6d09b7d17"
+        }
+      ],
+      "headers": [],
+      "authentication": {},
+      "metaSortKey": -1601191213682,
+      "isPrivate": false,
+      "settingStoreCookies": true,
+      "settingSendCookies": true,
+      "settingDisableRenderRequestBody": false,
+      "settingEncodeUrl": true,
+      "settingRebuildPath": true,
+      "settingFollowRedirects": "global",
+      "_type": "request"
+    },
+    {
+      "_id": "env_a045c7b95ddf4150807b9b5064632193",
+      "parentId": "wrk_ff3d56db4b224998a2b869afe1dcd8df",
+      "modified": 1553829145111,
+      "created": 1553829145111,
+      "name": "New Environment",
+      "data": {},
+      "dataPropertyOrder": null,
+      "color": null,
+      "isPrivate": false,
+      "metaSortKey": 1553829145112,
+      "_type": "environment"
+    },
+    {
+      "_id": "jar_1efefa6ca0a54ea185c5b6d9f0acc787",
+      "parentId": "wrk_ff3d56db4b224998a2b869afe1dcd8df",
+      "modified": 1553829145115,
+      "created": 1553829145115,
+      "name": "Default Jar",
+      "cookies": [],
+      "_type": "cookie_jar"
+    },
+    {
+      "_id": "spc_3659456d98d94cdda55e0318a63d314d",
+      "parentId": "wrk_ff3d56db4b224998a2b869afe1dcd8df",
+      "modified": 1592432876720,
+      "created": 1592432876720,
+      "fileName": "Insomnia",
+      "contents": "",
+      "contentType": "yaml",
+      "_type": "api_spec"
+    },
+    {
+      "_id": "env_6e185c7b5b0a4631b7f6fab0e56569cf",
+      "parentId": "env_a045c7b95ddf4150807b9b5064632193",
+      "modified": 1595549192739,
+      "created": 1595549180237,
+      "name": "StoreManager",
+      "data": {},
+      "dataPropertyOrder": null,
+      "color": null,
+      "isPrivate": false,
+      "metaSortKey": 1595549180237,
+      "_type": "environment"
+    }
+  ]
+}

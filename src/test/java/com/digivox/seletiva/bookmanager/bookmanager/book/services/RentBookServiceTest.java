@@ -7,6 +7,7 @@ import com.digivox.seletiva.bookmanager.bookmanager.book.BookRepository;
 import com.digivox.seletiva.bookmanager.bookmanager.customer.Customer;
 import com.digivox.seletiva.bookmanager.bookmanager.customer.CustomerRepository;
 import com.digivox.seletiva.bookmanager.bookmanager.exceptions.BookIsRentedOrReservedException;
+import com.digivox.seletiva.bookmanager.bookmanager.exceptions.BookNotFoundException;
 import com.digivox.seletiva.bookmanager.bookmanager.exceptions.CustomerNotFoundException;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.DisplayName;
@@ -49,7 +50,7 @@ public class RentBookServiceTest {
 
     @Test
     @DisplayName("Deve cadastrar livro com sucesso")
-    public void shouldRentBookSuccessfully() throws BookIsRentedOrReservedException, CustomerNotFoundException {
+    public void shouldRentBookSuccessfully() throws BookIsRentedOrReservedException, CustomerNotFoundException, BookNotFoundException {
         Book book = createBook().build();
         Customer customer = createCustomer().build();
         when(bookRepository.findById(anyLong())).thenReturn(Optional.of(book));

@@ -50,7 +50,7 @@ public class BookManagerControllerV1 {
             @PathVariable("bookId") Long bookId,
             @RequestParam("nationalId") String nationalId,
             @RequestParam("scheduledReturnDate") LocalDate scheduledReturnDate
-    ) throws BookIsRentedOrReservedException, CustomerNotFoundException {
+    ) throws BookIsRentedOrReservedException, CustomerNotFoundException, BookNotFoundException {
         this.rentBookService.rent(bookId, nationalId, scheduledReturnDate);
     }
 

@@ -18,7 +18,10 @@ Esses dois últimos fazem parte do mesmo endpoint, mas são diferenciados atrav�
 de chart que será utilizado, por exemplo:
 
 * {this.baseUrl}/v1/books/dashboard/pie -> retornar informações específicas para o chart do tipo torta.
-* {this.baseUrl}/v1/books/dashboard/bar -> retorna informações específicas para o chart do tipo barra. 
+* {this.baseUrl}/v1/books/dashboard/bar -> retorna informações específicas para o chart do tipo barra.
+
+Na pasta '/resources/templates' existem dois arquivos semelhantes, mas em formatos diferentes, que servem 
+como modelo de requisição para os endpoints. Foi utilizada a ferramenta Insomnia. 
 
 ## Endpoint de acesso ao contexto de livros
 
@@ -27,5 +30,9 @@ de chart que será utilizado, por exemplo:
 ## Endpoint de acesso ao contexto de clientes
 
 * /v1/customers/**
+
+## Banco de Dados
+
+Momentaneamente, foi utilizado o banco in-memory H2 Database.
 
 
